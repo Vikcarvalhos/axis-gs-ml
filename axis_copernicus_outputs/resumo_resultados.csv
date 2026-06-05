@@ -1,0 +1,12 @@
+item,valor
+Produto Sentinel-2,S2C_MSIL2A_20260527T222541_N0512_R029_T59GML_20260528T031956.SAFE
+Nível de processamento,Level-2A
+Data de aquisição,2026-05-27T22:25:41.024Z
+Cobertura de nuvens no metadado,19.582701
+Pixels válidos na grade reduzida,386931
+Melhor k no K-Means,6
+Silhouette do melhor k,0.3488531708717346
+Davies-Bouldin do melhor k,0.9650225596726386
+ARI contra SCL agrupado,0.2433679679100668
+NMI contra SCL agrupado,0.3597201295442269
+Acurácia do Random Forest surrogate,0.9902
