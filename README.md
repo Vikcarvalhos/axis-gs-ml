@@ -34,7 +34,6 @@ Estrutura esperada:
 GS - Machine Learning/
 ├─ axis_copernicus_sentinel2_estudo.ipynb
 ├─ Relatorio_Axis_Copernicus_Sentinel2.pdf
-├─ gerar_relatorio_axis_pdf.py
 ├─ axis_copernicus_outputs/
 └─ S2C_MSIL2A_20260527T222541_N0512_R029_T59GML_20260528T031956.SAFE/
 ```
@@ -54,12 +53,6 @@ Relatorio_Axis_Copernicus_Sentinel2.pdf
 PDF explicativo da entrega.
 
 ```text
-gerar_relatorio_axis_pdf.py
-```
-
-Script usado para gerar novamente o PDF explicativo.
-
-```text
 axis_copernicus_outputs/
 ```
 
@@ -76,7 +69,7 @@ Produto Sentinel-2 usado como base de dados.
 Instale as bibliotecas abaixo antes de executar o notebook:
 
 ```bash
-pip install numpy pandas matplotlib seaborn scikit-learn pillow rasterio nbformat nbclient reportlab pypdf pymupdf
+pip install numpy pandas matplotlib seaborn scikit-learn pillow rasterio nbformat nbclient
 ```
 
 Dependências usadas:
@@ -90,11 +83,8 @@ Dependências usadas:
 | `scikit-learn` | K-Means, PCA, Random Forest e métricas |
 | `pillow` | leitura dos arquivos `.jp2` do Sentinel-2 |
 | `rasterio` | leitura de metadados geoespaciais, CRS, resolução e bounds |
-| `nbformat` | leitura e manipulação de notebooks |
-| `nbclient` | execução programática do notebook |
-| `reportlab` | geração do PDF explicativo |
-| `pypdf` | validação/leitura do PDF |
-| `pymupdf` | renderização de prévias do PDF |
+| `nbformat` | suporte à leitura do notebook |
+| `nbclient` | suporte à execução do notebook |
 
 ## Como executar o notebook
 
@@ -109,7 +99,7 @@ S2C_MSIL2A_20260527T222541_N0512_R029_T59GML_20260528T031956.SAFE/
 3. Instale as dependências:
 
 ```bash
-pip install numpy pandas matplotlib seaborn scikit-learn pillow rasterio nbformat nbclient reportlab pypdf pymupdf
+pip install numpy pandas matplotlib seaborn scikit-learn pillow rasterio nbformat nbclient
 ```
 
 4. Abra o notebook:
@@ -133,20 +123,6 @@ Essa pasta contém:
 - perfis dos clusters;
 - importância das variáveis;
 - mapas reduzidos em `.npz`.
-
-## Como regenerar o PDF
-
-Depois de executar o notebook, rode:
-
-```bash
-python gerar_relatorio_axis_pdf.py
-```
-
-O arquivo gerado será:
-
-```text
-Relatorio_Axis_Copernicus_Sentinel2.pdf
-```
 
 ## Metodologia resumida
 
@@ -179,4 +155,3 @@ Relatorio_Axis_Copernicus_Sentinel2.pdf
 | Diana Letícia de Souza Inocencio | RM553562 |
 | João Viktor Carvalho de Souza | RM552613 |
 | Victor Augusto Pereira dos Santos | RM553518 |
-
